@@ -3,6 +3,7 @@ import { Button, FlatList, Image, ScrollView, StyleSheet, Text, TextInput, View 
 import LoginForm from './src/components/LoginForm/LoginForm';
 import { UserDTO } from './src/dtos/UserDTO';
 import PokemonList from './src/components/PokemonList/PokemonList';
+import PeliculasList from './src/components/PeliculasList/peliculasList';
 
 export default function App() {
   //Lista de datos
@@ -22,6 +23,7 @@ export default function App() {
 
   return (
     <ScrollView>
+      <PeliculasList></PeliculasList>
       <LoginForm user={userData}></LoginForm>
       <PokemonList></PokemonList>
       <FlatList
